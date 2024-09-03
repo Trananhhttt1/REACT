@@ -1,0 +1,161 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+
+  tr:hover td {
+    background-color: #fbe882;
+    cursor: pointer;
+    transform: scale(1.1); /* Phóng to cell khi hover */
+  }
+  th {
+    text-align: center;
+    border: 1px solid #2e2b2b;
+    background: #fbe882;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  td {
+    text-align: center;
+    border: 1px solid #2e2b2b;
+    padding: 10px 0px;
+    background: #fffcd3;
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà */
+  }
+}
+
+.search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  display: flex;
+}
+.search__icon {
+  width: 24px;
+  height: 24px;
+  margin-top: 5px;
+}
+/* Input field styling */
+.searchInput {
+  width: 100%;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  transition: border 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.searchInput::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+.searchInput:focus {
+  border: 2px solid #fbe882;
+  box-shadow: 0 0 10px #fbe882;
+  outline: none;
+}
+
+.desc {
+  text-align: center; /* Centers the content within the div */
+  position: absolute;
+  top: 2px;
+  right: 320px;
+}
+
+.desc button {
+  background-color: #fffcd3; /* Green background */
+  border: none; /* Remove borders */
+  color: black; /* White text */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  // transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.desc button:hover {
+  background-color: white; /* White background on hover */
+  color: black; /* Black text on hover */
+  border: 2px solid #fbe882; /* Green border on hover */
+}
+
+.btn {
+  width: 120px;
+  padding: 5px;
+  &:hover {
+    cursor: pointer;
+  }
+  &__create {
+    display: inline-block;
+    width: 200px;
+  }
+
+  &__edit:hover {
+    background: rgb(54, 17, 221);
+    color: white;
+    border-color: white;
+  }
+  &__delete:hover {
+    background: rgb(221, 54, 54);
+    color: white;
+    border-color: white;
+  }
+  &__detail:hover {
+    color: white;
+    border-color: white;
+    background: #dae906;
+  }
+  &__create {
+    background: #fffcd3;
+    display: block;
+    width: 20%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    transition: transform 0.3s ease;
+    &:hover {
+      background: #fbe882;
+      color: white;
+      border-color: white;
+      transform: scale(1.1);
+    }
+    // &__search {
+    //   display: flex;
+    //   align-items: center;
+    //   margin-bottom: 20px;
+    //   .searchInput {
+    //     padding: 10px;
+    //     border: 1px solid #ddd;
+    //     border-radius: 5px;
+    //     width: 300px;
+    //   }
+    // }
+  }
+}
+.icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.group__btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link {
+  text-decoration: none;
+  color: #2e2b2b;
+}

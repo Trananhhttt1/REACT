@@ -1,0 +1,14 @@
+// @import "~bootstrap/scss/bootstrap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+@font-face {
+  font-family: robotoReguler;
+  src: url(asset/fonts/roboto/Roboto-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+body {
+  font-family: robotoReguler, Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
